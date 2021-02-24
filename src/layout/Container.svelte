@@ -1,14 +1,13 @@
-<main id='main'>
+<main id="main">
   <slot />
 </main>
 
 <style>
   main {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    justify-content: center;
     align-items: center;
-    background: #f5f5f5;
     width: 100%;
     margin: 0 auto;
   }
