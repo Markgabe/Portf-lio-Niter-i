@@ -5,6 +5,7 @@
   import Home from "./pages/Home.svelte";
   import Personas from "./pages/Personas.svelte";
   import Desk from "./pages/Desk.svelte";
+  import Analise from "./pages/Analise.svelte";
 </script>
 
 <Router>
@@ -13,5 +14,6 @@
     <Route path="/pesquisa" component={Pesquisa} />
     <Route path="/desk" component={Desk} />
     <Route path="/personas" component={Personas} />
+    <Route path="/analise" component={Analise} />
   </Layout>
 </Router>
