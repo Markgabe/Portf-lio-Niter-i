@@ -1,11 +1,14 @@
-
-
-<form>
-  <input type="search" placeholder="O que procura?" aria-label="Search" />
+<form action="/" method="get">
+  <input
+    type="search"
+    placeholder="O que procura?"
+    aria-label="Search"
+    name="query"
+  />
   <button type="submit">Pesquisar</button>
 </form>
 
-<style>
+<style lang="scss">
   form {
     display: flex;
     flex-direction: column;
@@ -13,7 +16,7 @@
     justify-content: center;
     width: 100%;
     height: 50rem;
-    background: url('../assets/img/hero-img.jpg');
+    background: url("../assets/img/hero-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 80%;
@@ -27,10 +30,10 @@
     background: #fffd;
     border: 3px solid #fffd;
     transition: all 0.2s;
-  }
 
-  input:focus {
-    border-color: #d16721;
+    &:focus {
+      border-color: #d16721;
+    }
   }
 
   button {
@@ -43,11 +46,12 @@
     font-weight: bold;
     background: #d16721;
     color: #fff;
+    cursor: pointer;
 
     transition: all 0.2s;
-  }
 
-  button:hover {
-    background: #ff7c26;
+    &:hover {
+      background: #ff7c26;
+    }
   }
 </style>
