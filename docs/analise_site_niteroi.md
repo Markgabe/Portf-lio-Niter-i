@@ -7,12 +7,3 @@
 - Falta de espaço em branco entre os elementos
 - Paginação grande demais
 
-## Fundamentos de Design
-
-- Hierarquia visual
-- Cor e Contrase
-- Empaçamento
-- Alinhamento
-- Tipografia
-- Escala
-- Consistência
