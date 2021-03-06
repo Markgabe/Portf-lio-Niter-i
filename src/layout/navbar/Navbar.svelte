@@ -3,24 +3,26 @@
 </script>
 
 <nav>
-  <Link class="link" to="/">
-    <img src="../../assets/img/logo-4.png" alt="Prefeitura de Niterói" />
-  </Link>
+  <Link to="/" id="logo">Portfólio</Link>
   <div>
-    <Link class="link" to="/desk">Pesquisa Desk</Link>
-    <Link class="link" to="/personas">Personas</Link>
+    <Link to="/desk">Pesquisa Desk</Link>
+    <Link to="/personas">Personas</Link>
+    <Link to="/analise">Analise Competitiva</Link>
+    <Link to="/brainstorm">Brainstorm</Link>
+    <Link to="/form">Questionário</Link>
   </div>
 </nav>
 
-<style>
+<style lang="scss">
   nav {
-    position: fixed;
-    background: linear-gradient(to bottom, #fff, #fffa, #fff0);
+    background: #f8f9fabb;
     display: flex;
     flex-direction: row;
     height: 6rem;
     width: 100%;
+    padding: 20px;
     align-items: center;
+    position: fixed;
   }
 
   div {
@@ -29,25 +31,28 @@
     align-items: center;
     margin-left: auto;
     padding: 30px;
-    width: 30%;
-  }
-
-  img {
-    height: 120px;
-    padding: 20px;
-    margin-left: 20px;
   }
 
   nav :global(a) {
+    white-space: nowrap;
     color: #333;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    padding: 0.7em;
 
     transition: transform 0.2s;
-  }
 
-  nav :global(a):hover {
-    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.1);
+    }
 
-    transform: scale(1.1);
+    &[aria-current="page"] {
+      font-weight: bolder;
+      pointer-events: none;
+      &::before {
+        content: "> ";
+        top: 0;
+      }
+    }
   }
 </style>

@@ -2,7 +2,7 @@
   <slot />
 </main>
 
-<style>
+<style lang="scss">
   main {
     display: flex;
     flex-direction: column;
@@ -10,5 +10,6 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    margin-top: 6rem;
   }
 </style>
