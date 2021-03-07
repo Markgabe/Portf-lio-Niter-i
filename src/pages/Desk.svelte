@@ -63,7 +63,7 @@
 			</p>
 		</div>
 		<img src="./assets/img/pexels-gabby-k-6237910.jpg" alt="artigos">
-		</section>
+  </section>
 </div>
 
 <style>
@@ -75,9 +75,6 @@
     width: 100%;
     margin: 40px;
 		display: flex;
-  }
-
-  h2 {
   }
   p {
     margin: 20px;
