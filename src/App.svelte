@@ -11,11 +11,11 @@
 
 <Router>
   <Layout>
-    <Route path="/" component={Home} />
-    <Route path="/form" component={Questionario} />
-    <Route path="/desk" component={Desk} />
-    <Route path="/personas" component={Personas} />
-    <Route path="/analise" component={Analise} />
-    <Route path="/brainstorm" component={Brainstorm} />
+    <Route path="/"><Home /></Route>
+    <Route path="/form"><Questionario /></Route>
+    <Route path="/desk"><Desk /></Route>
+    <Route path="/personas"><Personas /></Route>
+    <Route path="/analise"><Analise /></Route>
+    <Route path="/brainstorm"><Brainstorm /></Route>
   </Layout>
 </Router>
