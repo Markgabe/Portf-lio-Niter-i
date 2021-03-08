@@ -4,7 +4,6 @@
   title.set("Desk Research");
 </script>
 
-<h1>Desk Research</h1>
 <section>
   <div>
     <h2>Navegação</h2>
@@ -78,12 +77,6 @@
     padding: 70px;
   }
 
-  hr {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    width: 65%;
-    margin: 0 auto;
-  }
   p {
     margin: 40px 0;
   }
