@@ -1,4 +1,7 @@
 <script>
+  import { title } from "../store.js";
+
+  title.set("Desk Research");
 </script>
 
 <h1>Desk Research</h1>
@@ -68,16 +71,11 @@
 </section>
 
 <style>
-  #main-section {
-    padding: 0 30px;
-    width: 100%;
-  }
   section {
     margin: 0 auto;
-    width: 85%;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding: 70px;
   }
 
   hr {
@@ -98,9 +96,5 @@
   div {
     width: 30%;
     padding: 10px;
-  }
-
-  h1 {
-    margin-top: 20px;
   }
 </style>
