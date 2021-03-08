@@ -8,7 +8,7 @@
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 6rem;
   }
