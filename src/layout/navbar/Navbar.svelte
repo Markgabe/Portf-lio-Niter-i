@@ -14,7 +14,7 @@
 
 <style lang="scss">
   nav {
-    background: #f8f9fabb;
+    background: #f8f9facc;
     display: flex;
     flex-direction: row;
     height: 6rem;
@@ -22,6 +22,7 @@
     padding: 20px;
     align-items: center;
     position: fixed;
+	border-bottom: 1px solid gray;
   }
 
   div {
