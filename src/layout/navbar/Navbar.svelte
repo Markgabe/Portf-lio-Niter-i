@@ -5,8 +5,8 @@
 <nav>
   <Link to="/" id="logo">Portfólio</Link>
   <div>
-    <Link to="/desk">Pesquisa Desk</Link>
-    <Link to="/analise">Analise Competitiva</Link>
+    <Link to="/desk">Desk Research</Link>
+    <Link to="/analise">Análise Competitiva</Link>
     <Link to="/brainstorm">Brainstorm</Link>
     <Link to="/form">Questionário</Link>
   </div>
