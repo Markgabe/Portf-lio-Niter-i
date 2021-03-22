@@ -1,10 +1,23 @@
-<h1>Categorias</h1>
-<!-- explicaçãozinha dos resultados -->
-<!-- print das categorias -->
+<script>
+	import { title } from "../store.js";
 
-<h1>Matriz de Similaridade</h1>
-<!-- explicaçãozinha da matriz e observações -->
-<!-- print da matriz -->
+	title.set("Card sorting");
+</script>
 
-<h1>Conclusão</h1>
-<!-- concluir algo ridículo -->
+
+<a href="https://hva20o14.optimalworkshop.com/optimalsort/ek23hyrr" target=”_blank”>Ir para a pesquisa</a>
+<a href="https://app.optimalworkshop.com/optimalsort/hva20o14/ek23hyrr/shared-results" target=”_blank”>Ir para os resultados</a>
+
+<style>
+	a {
+		text-decoration: none;
+		background: grey;
+		color: white;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		width: 300px;
+		text-align: center;
+	}
+</style>
