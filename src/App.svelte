@@ -7,6 +7,7 @@
   import Desk from "./pages/Desk.svelte";
   import Analise from "./pages/Analise.svelte";
   import Brainstorm from "./pages/Brainstorm.svelte";
+  import CardSorting from "./pages/CardSorting.svelte";
 </script>
 
 <Router>
@@ -17,5 +18,6 @@
     <Route path="/personas"><Personas /></Route>
     <Route path="/analise"><Analise /></Route>
     <Route path="/brainstorm"><Brainstorm /></Route>
+    <Route path="/sorting"><CardSorting /></Route>
   </Layout>
 </Router>
