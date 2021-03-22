@@ -9,6 +9,7 @@
     <Link to="/analise">Análise Competitiva</Link>
     <Link to="/brainstorm">Brainstorm</Link>
     <Link to="/form">Questionário</Link>
+    <Link to="/personas">Personas</Link>
   </div>
 </nav>
 
