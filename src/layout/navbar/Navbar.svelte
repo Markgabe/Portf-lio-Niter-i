@@ -8,8 +8,8 @@
     <Link to="/desk">Desk Research</Link>
     <Link to="/analise">Análise Competitiva</Link>
     <Link to="/brainstorm">Brainstorm</Link>
-    <Link to="/form">Questionário</Link>
     <Link to="/personas">Personas</Link>
+    <Link to="/results">Results</Link>
   </div>
 </nav>
 
@@ -24,6 +24,7 @@
     align-items: center;
     position: fixed;
     border-bottom: 1px solid gray;
+    z-index: 100;
 
     :global(a) {
       white-space: nowrap;
