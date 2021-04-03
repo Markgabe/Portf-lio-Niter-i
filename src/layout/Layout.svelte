@@ -19,7 +19,7 @@
 
 <style>
   h1 {
-    margin-top: 7rem;
+    margin-top: 1rem;
     margin-left: 3.7rem;
     align-self: flex-start;
     font-size: 3.5em;

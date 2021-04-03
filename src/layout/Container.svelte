@@ -10,6 +10,6 @@
     align-items: center;
     width: 85%;
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 </style>

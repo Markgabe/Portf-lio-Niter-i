@@ -1,60 +1,62 @@
 <script>
+	import Personas from './../../pages/Personas.svelte';
   import { Link } from "svelte-routing";
+  import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
+  } from 'sveltestrap';
+
+  let isOpen = false;
+
+  function handleUpdate(event) {
+    isOpen = event.detail.isOpen;
+  }
 </script>
 
-<nav>
-  <Link to="/" id="logo">Portfólio</Link>
-  <div>
-    <Link to="/desk">Desk Research</Link>
-    <Link to="/analise">Análise Competitiva</Link>
-    <Link to="/brainstorm">Brainstorm</Link>
-    <Link to="/personas">Personas</Link>
-    <Link to="/results">Results</Link>
-  </div>
-</nav>
-
-<style lang="scss">
-  nav {
-    background: #f8f9facc;
-    display: flex;
-    flex-direction: row;
-    height: 6rem;
-    width: 100%;
-    padding: 2rem;
-    align-items: center;
-    position: fixed;
-    border-bottom: 1px solid gray;
-    z-index: 100;
-
-    :global(a) {
-      white-space: nowrap;
-      color: #333;
-      font-size: 1.2rem;
-      padding: 0.7em;
-
-      transition: transform 0.2s;
-
-      &:hover {
-        text-decoration: none;
-        transform: scale(1.1);
-      }
-
-      &[aria-current="page"] {
-        font-weight: bolder;
-        pointer-events: none;
-        &::before {
-          content: "> ";
-          top: 0;
-        }
-      }
-    }
-  }
-
-  div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: auto;
-    padding: 30px;
-  }
-</style>
+<Navbar color="light" light expand="md">
+  <NavbarBrand href="/">Portfólio</NavbarBrand>
+  <NavbarToggler on:click={() => (isOpen = !isOpen)} />
+  <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
+    <Nav class="ml-auto" navbar>
+      <UncontrolledDropdown nav inNavbar>
+        <DropdownToggle nav caret>Análise</DropdownToggle>
+        <DropdownMenu right>
+          <DropdownItem>
+            <Link to="/analise" class="nav-link">Análise Competitiva</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/brainstorm" class="nav-link">Brainstorm</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/desk" class="nav-link">Pesquisa Desk</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/form" class="nav-link">Questionário</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/results" class="nav-link">Resultados do questionário</Link>
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      <UncontrolledDropdown nav inNavbar>
+        <DropdownToggle nav caret>Prototipação</DropdownToggle>
+        <DropdownMenu right>
+          <DropdownItem>
+            <Link to="/personas" class="nav-link">Personas</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/sorting" class="nav-link">Card Sorting</Link>
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    </Nav>
+  </Collapse>
+</Navbar>
