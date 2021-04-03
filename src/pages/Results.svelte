@@ -2,6 +2,9 @@
   import PieChart from '../components/chart/PieChart.svelte';
   import BarChart from '../components/chart/BarChart.svelte';
   import ColumnChart from '../components/chart/ColumnChart.svelte';
+  import { title } from "../store.js";
+
+  title.set("Results");
 </script>
  
 <PieChart 
