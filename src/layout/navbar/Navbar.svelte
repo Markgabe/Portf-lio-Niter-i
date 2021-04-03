@@ -1,5 +1,4 @@
 <script>
-	import Personas from './../../pages/Personas.svelte';
   import { Link } from "svelte-routing";
   import {
     Collapse,
@@ -7,7 +6,6 @@
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -54,6 +52,9 @@
           </DropdownItem>
           <DropdownItem>
             <Link to="/sorting" class="nav-link">Card Sorting</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/cenarios" class="nav-link">Cenários de uso</Link>
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
