@@ -1,4 +1,5 @@
 <script>
+	import Prototipo from './../../pages/Prototipo.svelte';
   import { Link } from "svelte-routing";
   import {
     Collapse,
@@ -55,6 +56,12 @@
           </DropdownItem>
           <DropdownItem>
             <Link to="/cenarios" class="nav-link">Cenários de uso</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/analise-tarefas" class="nav-link">Análise de Tarefas</Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="/prototipo" class="nav-link">Protótipo</Link>
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>

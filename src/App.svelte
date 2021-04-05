@@ -9,6 +9,9 @@
   import Brainstorm from "./pages/Brainstorm.svelte";
   import CardSorting from "./pages/CardSorting.svelte";
   import Results from "./pages/Results.svelte";
+  import Cenarios from "./pages/Cenarios.svelte";
+  import AnaliseTarefas from "./pages/AnaliseTarefas.svelte";
+  import Prototipo from "./pages/Prototipo.svelte";
 </script>
 
 <Router>
@@ -21,5 +24,8 @@
     <Route path="/brainstorm"><Brainstorm /></Route>
     <Route path="/sorting"><CardSorting /></Route>
     <Route path="/results"><Results /></Route>
+    <Route path="/cenarios"><Cenarios /></Route>
+    <Route path="/analise-tarefas"><AnaliseTarefas /></Route>
+    <Route path="/prototipo"><Prototipo /></Route>
   </Layout>
 </Router>
